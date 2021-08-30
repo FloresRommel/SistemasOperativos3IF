@@ -1,0 +1,32 @@
+  1  rpm -Uvh https://repo.mysql.com/mysql80-community-release-el7-3.noarch.rpm
+  2  sed -i 's/enabled=1/enabled=0/' /etc/yum.repos.d/mysql-community.repo
+  3  yum --enablerepo=mysql80-community install mysql-community-server
+  4  service mysqld statusa
+  5  service mysqld status
+  6  service mysql status
+  7  rpm -Uvh https://repo.mysql.com/mysql80-community-release-el7-3.noarch.rpm
+  8  sed -i 's/enabled=1/enabled=0/' /etc/yum.repos.d/mysql-community.repo
+  9  sed -i 's/enabled=1/enabled=0/'/etc/yum.repos.d/mysql-community.repo
+ 10  sed -i 's/enabled=1/enabled=0/' /etc/yum.repos.d/mysql-community.repo
+ 11  yum --enablerepo=mysql80-community install mysql-community-server
+ 12  yum --enablerepo=mysql80-community install mysql-server
+ 13  service mysqld statusa
+ 14  service mysqld status
+ 15  service mysqld start
+ 16  service mysqld status
+ 17  grep "A temporary password" /var/log/mysqld.log
+ 18  grep "A temporary password" /var/log/mysql.log
+ 19  grep "A temporary password" /var/log/mysqld.log
+ 20  ll /var/log
+ 21  ll/var/log/mysql
+ 22  grep "A temporary password" /var/log/mysql/mysqld.log
+ 23  cat /var/log/mysql/mysqld.log
+ 24  cat /var/log/mysql/mysqld.log |grep "A temporary password"
+ 25  more /var/log/mysql/mysqld.log |grep "A temporary password"
+ 26  grep "A temporary password" /var/log/mysql/mysqld.log
+ 27  mysql_secure_installation
+ 28  service mysqld restart
+ 29  chkconfig myslqd on
+ 30  chkconfig mysqld on
+ 31  mysql -u root -p
+ 32  history >> MySQLInstallation.txt
