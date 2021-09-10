@@ -1,0 +1,14 @@
+    5  mysql -u root -p
+    6  exit
+    7  mysql
+    8  mysql -u root -p
+    9  mysql -u pepe -h "localhost" -p
+   10  mysqldump prueba -h localhost -u pepe -p > /home/santiago/Escritorio/respaldo_santiago.sql
+   11  mysqldump respaldo_santiago -h localhost -u pepe -p > /home/santiago/Escritorio/respaldo_santiago.sql
+   12  ll /home/santiago/Escritorio/
+   13  cat /home/santiago/Escritorio/respaldo_santiago.sql 
+   14  more /home/santiago/Escritorio/respaldo_santiago.sql 
+   15  mysql -u root -p < /home/santiago/Escritorio/respaldo_santiago.sql
+   16  mysql respaldo_santiago -u root -p < /home/santiago/Escritorio/respaldo_santiago.sql
+   17  hitsory > /home/santiago/Escritorio/HistoryRespado.txt
+   18  history > /home/santiago/Escritorio/HistoryRespado.txt
