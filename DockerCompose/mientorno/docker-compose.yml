@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+        web:
+          build:
+              context: ./apache-php
+              dockerfile: Dockerfile
+          dependens_on:
+              - db
+          ports:
+              - "443:80"
+          volumes:
+              - ./www:/var/www
+        db:
+          build:
+              context: ./mysql
+              dockerfile: Dockerfile
+          enviroment:
+              - MYSQL_ROOT_PASSWORD=12345678Aa?
+              - MYSQL_ROOT_HOST=%
+          ports:
+              - "3310:3306"
+          volumes:
+              - ./data:/var/lib/mysql
+

@@ -1,0 +1,87 @@
+    1  yum install mysql-server
+    2  mysql_secure_installation
+    3  service mysqld start
+    4  mysql_secure_installation
+    5  mysql -u root -p
+    6  exit
+    7  mysql
+    8  mysql -u root -p
+    9  mysql -u pepe -h "localhost" -p
+   10  mysqldump prueba -h localhost -u pepe -p > /home/santiago/Escritorio/respaldo_santiago.sql
+   11  mysqldump respaldo_santiago -h localhost -u pepe -p > /home/santiago/Escritorio/respaldo_santiago.sql
+   12  ll /home/santiago/Escritorio/
+   13  cat /home/santiago/Escritorio/respaldo_santiago.sql 
+   14  more /home/santiago/Escritorio/respaldo_santiago.sql 
+   15  mysql -u root -p < /home/santiago/Escritorio/respaldo_santiago.sql
+   16  mysql respaldo_santiago -u root -p < /home/santiago/Escritorio/respaldo_santiago.sql
+   17  hitsory > /home/santiago/Escritorio/HistoryRespado.txt
+   18  history > /home/santiago/Escritorio/HistoryRespado.txt
+   19  more /home/santiago/Escritorio/HistoryRespado.txt
+   20  chmod 777 /home/santiago/Escritorio/HistoryRespado.txt
+   21  chmod 777 /home/santiago/Escritorio/respaldo_santiago.sql
+   22  exit
+   23  logout
+   24  yum install openssh-clients
+   25  yum install openssh-server
+   26  service sshd status
+   27  ip
+   28  ipconfig
+   29  ifconfig
+   30  clear
+   31  ll /
+   32  ll /var/
+   33  RUN yum -y update
+   34  yum -y update
+   35  yum -y install httpd httpd-tools
+   36  rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+   37  rpm -Uvh http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+   38  yum --enable=remi-php73 -y install php php-bcmath php-cli php-common php-gd php-intl php-ldap php-mbstring php-mysqlnd php-pear php-soap php-xml php-xmlrpc php-zip
+   39  yum --enablerepo=remi-php73 -y install php php-bcmath php-cli php-common php-gd php-intl php-ldap php-mbstring php-mysqlnd php-pear php-soap php-xml php-xmlrpc php-zip
+   40  shutdown -h now
+   41  history
+   42  sed -Eie '/<Directory "\/var\/www\/html">/,/<\/Directory>/s/AllowOverride None/AllowOverride All/' /etc/httpd/conf/httpd.conf
+   43  ll /etc/httpd/conf
+   44  sed -Eie 's/DirectoryIndex (.*)$DirectoryIndex index.php \1/g' /etc/httpd/conf/httpd.conf
+   45  sed -E -i -e 's/DirectoryIndex (.*)$DirectoryIndex index.php \1/g' /etc/httpd/conf/httpd.conf
+   46  sed -E -i -e 's/DirectoryIndex (.*)$/DirectoryIndex index.php \1/g' /etc/httpd/conf/httpd.conf
+   47  expose 80
+   48  systemctl start httpd
+   49  systemctl status httpd
+   50  CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
+   51  cmd ["/usr/sbin/httpd","-D","FOREGROUND"]
+   52  find / -name apache
+   53  cd /home/santiago/Documentos/
+   54  cd mientorno/
+   55  mkdir apache-php7-mysql18
+   56  cd apache-php7-mysql18/
+   57  cd ..
+   58  rm -rf apache-php7-mysql18/
+   59  clear
+   60  ifocnfig
+   61  ifconfig
+   62  ll
+   63  tar -xzvf apache-php7-mysql8.zip
+   64  gzip-d apache-php7-mysql8.zip
+   65  gzip -d apache-php7-mysql8.zip
+   66  chown santiago:santiago apache-php7-mysql8.zip 
+   67  gzip -d apache-php7-mysql8.zip
+   68  cd apache-php7-mysql8/www/
+   69  ll
+   70  cd html/
+   71  vi index.php
+   72  vi test.php 
+   73  cd ..
+   74  docker-compose up -d
+   75  apt-get docker-compose
+   76  apt-get install docker-compose
+   77  yum install docker-compose
+   78  docker-composer up -d
+   79  docker-compose up -d
+   80  yum remove docker-compose
+   81  docker-compose --version
+   82  yum -y docker-compose
+   83  yum -y update
+   84  yum -y upgrade
+   85  ll /usr/local/bin/
+   86  shutdown -h now
+   87  history >> /home/santiago/Documentos/history.txt
